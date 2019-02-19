@@ -1,0 +1,98 @@
+body {
+    background-color: #111;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'nav nav nav'
+        'video video aside'
+        'comments comments aside';
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+    width: 100%;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    font-size: 18px;
+}
+nav img {
+    height: 18px;
+}
+input {
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+input[type=text] {
+    font-size: 18px;
+    border: 1px rgb(240, 240, 240) solid;
+    box-shadow: 1px rgb(250, 250, 250);
+    color: black;
+    background: white;
+    margin: 10px;
+}
+input[type=submit] {
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+    background: rgb(240, 240, 240);
+}
+
+.video {
+    grid-area: video;
+    padding-left: 30px;
+}
+.video-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    grid-area: aside;
+    padding-right: 30px;
+}
+.thumbnail-container {
+    float: left;
+    position: relative;
+    width: 168px;
+}
+.timestamp {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.comments {
+    grid-area: comments;
+    padding-left: 30px;
+}
