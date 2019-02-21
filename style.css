@@ -47,12 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* Page */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: white;
     background-color: #111;
 }
-
 main {
     position: absolute;
     top: 0;
@@ -64,15 +64,48 @@ main {
         'nav nav nav'
         'section section aside';
     grid-auto-rows: auto;
-    grid-gap: 30px;
+    grid-gap: 25px;
     width: 100%;
 }
-
+h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h2, h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+h3 {
+    color: #aaa;
+}
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+h5 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+}
+h6 {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 18px;
+}
 a {
     color: white;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
 }
 
+/* Nav */
 nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     grid-area: nav;
     display: flex;
     justify-content: space-between;
@@ -81,21 +114,21 @@ nav {
     background-color: #232323;
 }
 input {
-    padding: 10px 15px;
-    margin: 10px;
     font-size: 18px;
     color: black;
     background-color: white;
+    margin: 10px;
     border: 1px rgb(240, 240, 240) solid;
     border-radius: 3px;
     box-shadow: 1px rgb(250, 250, 250);
+    padding: 10px 15px;
 }
 
+/* Video */
 section {
     grid-area: section;
-    margin-left: 30px;
+    margin-left: 25px;
 }
-
 .video-container {
     position: relative;
     height: 0;
@@ -112,16 +145,39 @@ iframe {
     display: flex;
     justify-content: space-between;
 }
+.video-info {
+    position: relative;
+    display: flex;
+}
+.video-info button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f00;
+}
+.channel-name {
+    display: flex;
+}
+.published {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    line-height: 18px;
+}
+.description {
+    width: 80%;
+    white-space: pre-line;
+}
 
+/* Aside */
 aside {
     grid-area: aside;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 aside header {
     display: flex;
     justify-content: space-between;
 }
-.related-video {
+.related-video a, a .related-video {
     display: flex;
     margin-bottom: 10px;
 }
@@ -134,11 +190,11 @@ aside header {
     position: absolute;
     bottom: 5%;
     right: 2.5%;
-    padding: 2px 4px;
     font-size: 12px;
     font-weight: bold;
     background-color: #000;
     border-radius: 2px;
+    padding: 2px 4px;
     opacity: 0.9;
 }
 .mix {
@@ -155,10 +211,23 @@ aside header {
     opacity: 0.7;
 }
 .text-container {
-    margin-left: 10px;
     white-space: pre-line;
+    margin-left: 10px;
 }
 
+/* Comments */
 .comments header {
     display: flex;
+}
+.comment {
+    display: flex;
+    margin-bottom: 25px;
+}
+.comment-who-when {
+    display: flex;
+}
+.ago {
+    color: #888;
+    font-size: 13px;
+    line-height: 18px;
 }
