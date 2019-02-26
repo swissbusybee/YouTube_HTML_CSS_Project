@@ -80,18 +80,18 @@ h3 {
 }
 h4 {
     font-size: 14px;
-    font-weight: 500;
     line-height: 16px;
 }
-h5 {
-    font-size: 13px;
+h4, h5 {
     font-weight: 500;
+}
+h5, h6 {
+    font-size: 13px;
     line-height: 18px;
 }
 h6 {
     color: #aaa;
-    font-size: 13px;
-    line-height: 18px;
+    white-space: pre-line;
 }
 a {
     color: white;
@@ -99,6 +99,11 @@ a {
 }
 button {
     cursor: pointer;
+}
+.material-icons {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    line-height: 13px;
 }
 
 /* Nav */
@@ -110,18 +115,33 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
     background-color: #232323;
 }
+nav .material-icons {
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+form {
+    max-width: 640px;
+    height: 36px;
+}
 input {
-    font-size: 18px;
-    color: black;
-    background-color: white;
-    margin: 10px;
-    border: 1px rgb(240, 240, 240) solid;
-    border-radius: 3px;
-    box-shadow: 1px rgb(250, 250, 250);
-    padding: 10px 15px;
+    font-size: 16px;
+    line-height:24px;
+    color: rgba(255, 255, 255, 0.882353);
+    background-color: #111;
+    border: 1px #303030 solid;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: #000 0 1px 2px 0 inset;
+    padding: 5px 11px;
+}
+.sign-in {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3ea6ff;
+    text-transform: uppercase;
 }
 
 /* Video */
@@ -141,31 +161,81 @@ iframe {
     width: 100%;
     height: 100%;
 }
+.video header {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0980392);
+}
 .video-subheading {
     display: flex;
     justify-content: space-between;
 }
+.video-options a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #909090;
+    text-transform: uppercase;
+}
+.video-options .material-icons {
+    font-size: 20px;
+    line-height: 20px;
+}
+.video-options .fas {
+    font-size: 16px;
+    line-height: 16px;
+}
 .video-info {
     position: relative;
     display: flex;
+    margin-bottom:24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0980392);
 }
-.video-info button {
+.subscribe {
     position: absolute;
     top: 0;
     right: 0;
+    width: 141px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: pre-wrap;
     background-color: #f00;
+    border: 0;
+    border-radius: 2px;
+}
+.sub-num {
+    color: rgba(255, 255, 255, 0.85098);
+}
+.channel-icon {
+    border-radius: 50%;
 }
 .channel-name {
     display: flex;
 }
 .published {
-    color: rgba(255, 255, 255, 0.6);
     font-size: 13px;
     line-height: 18px;
+    color: rgba(255, 255, 255, 0.6);
 }
 .description {
     width: 80%;
+    font-size: 14px;
+    line-height: 21px;
     white-space: pre-line;
+}
+.description a {
+    color: #3ea6ff;
+}
+.show-more {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Aside */
@@ -211,13 +281,25 @@ aside header {
     opacity: 0.7;
 }
 .text-container {
-    white-space: pre-line;
     margin-left: 10px;
 }
 
 /* Comments */
 .comments header {
     display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.sort-by a {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+.sort-by .material-icons {
+    color: #aaa;
+    font-size: 24px;
+    font-size: 24px;
 }
 .comment {
     display: flex;
@@ -230,4 +312,33 @@ aside header {
     color: #888;
     font-size: 13px;
     line-height: 18px;
+}
+.comment-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+.comment-options, .comment-options a {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+.comment-options .material-icons {
+    color: #909090;
+    font-size: 16px;
+    line-height: 16px;
+}
+.replies a {
+    margin-top: 8px;
+    margin-bottom:12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #fff;
+}
+.replies .material-icons {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
 }
