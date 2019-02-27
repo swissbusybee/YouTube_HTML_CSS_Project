@@ -14,16 +14,17 @@
 
             <nav>
 
-                <a href='#'><i class="material-icons">menu</i></a>
-                <a href='#'><img src='assets/yt_logo_rgb_dark.png' alt='YouTube logo' height='18'></a>
+                <a href='#'><i class="material-icons menu">menu</i></a>
+                <div class='logo-container'>
+                    <a href='#'><img src='assets/yt_logo_rgb_dark.png' alt='YouTube logo' height='18'></a>
+                </div>
                 <form actiom='#' name='search'>
-                    <input type='text' name='searchbar' size=50 placeholder='Search'>
-                    <button type='submit'><i class="material-icons">search</i></button>
+                    <input type='text' name='searchbar' size=50 placeholder='Search'><button type='submit'><i class="material-icons">search</i></button>
                 </form>
                 <a href='#'><i class="fas fa-upload"></i></a>
-                <a href='#'><i class="material-icons">apps</i></a>
+                <a href='#'><i class="material-icons apps">apps</i></a>
                 <a href='#'><i class="fas fa-comment-dots"></i></a>
-                <a href='#'><i class="material-icons">more_vert</i></a>
+                <a href='#'><i class="material-icons settings">more_vert</i></a>
                 <a class='sign-in' href='#'>Sign in</a>
 
             </nav>
@@ -41,11 +42,23 @@
                         <div class='video-subheading'>
                             <h3>155,667,807 views</h3>
                             <div class='video-options'>
-                                <a href='#'><i class="material-icons">thumb_up</i> 1.1M</a>
-                                <a href='#'><i class="material-icons">thumb_down</i> 57K</a>
-                                <a href='#'><i class="fas fa-share"></i> Share</a>
-                                <a href='#'><i class="material-icons">playlist_add</i> Save</a>
-                                <a href='#'><i class="material-icons">more_horiz</i></a>
+                                <div class='like'>
+                                    <a href='#'><i class="material-icons">thumb_up</i></a>
+                                    <a href='#'>1.1M</a>
+                                </div>
+                                <div class='dislike'>
+                                    <a href='#'><i class="material-icons">thumb_down</i></a>
+                                    <a href='#'>57K</a>
+                                </div>
+                                <div class='share'>
+                                    <a href='#'><i class="fas fa-share"></i></a>
+                                    <a href='#'>Share</a>
+                                </div>
+                                <div class='save'>
+                                    <a href='#'><i class="material-icons">playlist_add</i></a>
+                                    <a href='#'>Save</a>
+                                </div>
+                                <a href='#'><i class="material-icons actions">more_horiz</i></a>
                             </div>
                         </div>
                     </header>
@@ -74,9 +87,17 @@
                     <header>
                         <h2>40,932 Comments</h2>
                         <div class='sort-by'>
-                            <a href='#'><i class="material-icons">sort</i> Sort by</a>
+                            <a href='#'><i class="material-icons">sort</i></a>
+                            <a href='#'>Sort by</a>
                         </div>
                     </header>
+
+                    <div class='comment'>
+                        <a href='#'><img class='channel-icon' src='assets/avatar.png' alt='Avatar' width='40px' height='40px'></a>
+                        <p class='comment-add'>
+                            Add a public comment...
+                        </p>
+                    </div>
 
                     <div class='comment'>
                         <a href='#'><img class='channel-icon' src='assets/rihanna.jpg' alt='Rihanna' width='40px' height='40px'></a>
@@ -86,7 +107,7 @@
                                 <a class='ago' href='#'>4 months ago</a>
                             </div>
                             <p class='comment-text'>
-                                😯😯🔥🔥
+                                Work work work work work. 😯😯🔥🔥
                             </p>
                             <div class='comment-options'>
                                 <a href='#'><i class="material-icons">thumb_up</i></a> 13K
@@ -107,7 +128,7 @@
                                 <a class='ago' href='#'>1 month ago</a>
                             </div>
                             <p class='comment-text'>
-                                🍋
+                                We're far from the shallow now! 🍋
                             </p>
                             <div class='comment-options'>
                                 <a href='#'><i class="material-icons">thumb_up</i></a> 2.9K
@@ -128,7 +149,7 @@
                                 <a class='ago' href='#'>1 month ago</a>
                             </div>
                             <p class='comment-text'>
-                                👸
+                                Look what you made me do. 👸
                             </p>
                             <div class='comment-options'>
                                 <a href='#'><i class="material-icons">thumb_up</i></a> 5.1K
@@ -150,7 +171,7 @@
                                 <a class='ago' href='#'>2 weeks ago</a>
                             </div>
                             <p class='comment-text'>
-                                🔥🔥🎶
+                                Hello... 🔥🔥
                             </p>
                             <div class='comment-options'>
                                 <a href='#'><i class="material-icons">thumb_up</i></a> 1.4K
@@ -171,7 +192,7 @@
                                 <a class='ago' href='#'>3 weeks ago</a>
                             </div>
                             <p class='comment-text'>
-                                ✊🏽✊🏾✊🏿
+                                I like it. ✊🏽✊🏾✊🏿
                             </p>
                             <div class='comment-options'>
                                 <a href='#'><i class="material-icons">thumb_up</i></a> 381
@@ -198,7 +219,7 @@
                 </header>
 
 
-                <div class='related-video'>
+                <div class='up-next'>
                     <a href='#'><div class='thumbnail-container'>
                         <img src='assets/beyonce_hold_up.jpg' alt='Beyoncé - Hold Up (Video)' width='168'>
                         <div class='timestamp'>5:17</div>
@@ -209,8 +230,6 @@
                         162M views</h6>
                     </div></a>
                 </div>
-
-                <hr>
 
                 <a href='#'><div class='related-video'>
                     <div class='thumbnail-container'>

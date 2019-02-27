@@ -115,18 +115,32 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 56px;
+    padding: 0 16px;
     background-color: #232323;
 }
 nav .material-icons {
+    padding: 8px;
     color: #fff;
     font-size: 24px;
     line-height: 24px;
 }
+.menu {
+    margin-right: 16px;
+}
+.logo-container {
+    width: 129px;
+}
 form {
-    max-width: 640px;
+    display: flex;
+    width: 710px;
     height: 36px;
+    margin: 0 40px;
 }
 input {
+    width: 80%;
+    margin: 0;
+    padding: 5px 11px;
     font-size: 16px;
     line-height:24px;
     color: rgba(255, 255, 255, 0.882353);
@@ -135,9 +149,26 @@ input {
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     box-shadow: #000 0 1px 2px 0 inset;
-    padding: 5px 11px;
+}
+form button {
+    margin: 0;
+    width: 65px;
+    padding: 3px 6px;
+    background-color: rgba(255, 255, 255, 0.0784314);
+    border: 1px #303030 solid;
+    border-left-width: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+form button .material-icons {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.498039);
+}
+.fa-upload, .apps, .fa-comment-dots, .settings {
+    margin-right: 8px;
 }
 .sign-in {
+    padding: 10px 16px;
     font-size: 14px;
     line-height: 16px;
     color: #3ea6ff;
@@ -162,13 +193,15 @@ iframe {
     height: 100%;
 }
 .video header {
+    margin-bottom: 15px;
     padding-top: 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.0980392);
 }
-.video-subheading {
+.video-subheading, .video-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .video-options a {
     font-size: 13px;
@@ -177,12 +210,19 @@ iframe {
     text-transform: uppercase;
 }
 .video-options .material-icons {
+    padding: 8px;
     font-size: 20px;
     line-height: 20px;
 }
 .video-options .fas {
+    padding: 8px;
     font-size: 16px;
     line-height: 16px;
+}
+.like, .dislike, .share, .save, .actions {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
 }
 .video-info {
     position: relative;
@@ -193,7 +233,7 @@ iframe {
 }
 .subscribe {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     width: 141px;
     height: 36px;
@@ -211,6 +251,7 @@ iframe {
     color: rgba(255, 255, 255, 0.85098);
 }
 .channel-icon {
+    margin-right: 15px;
     border-radius: 50%;
 }
 .channel-name {
@@ -247,9 +288,14 @@ aside header {
     display: flex;
     justify-content: space-between;
 }
-.related-video a, a .related-video {
+.up-next a, .related-video a, a .related-video {
     display: flex;
     margin-bottom: 10px;
+}
+.up-next {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0980392);
 }
 .thumbnail-container {
     position: relative;
@@ -287,23 +333,37 @@ aside header {
 /* Comments */
 .comments header {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    margin-bottom:24px;
+}
+.comments header h2 {
+    margin-right: 32px;
+}
+.sort-by {
+    display: flex;
+}
+.sort-by .material-icons {
+    margin-right: 8px;
+    color: #aaa;
+    font-size: 24px;
+    font-size: 24px;
 }
 .sort-by a {
     font-size: 14px;
-    line-height: 20px;
     text-transform: uppercase;
     color: #aaa;
 }
-.sort-by .material-icons {
-    color: #aaa;
-    font-size: 24px;
-    font-size: 24px;
-}
 .comment {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 25px;
+}
+.comment-add {
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.498039);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0980392);
 }
 .comment-who-when {
     display: flex;
@@ -325,6 +385,7 @@ aside header {
     color: #aaa;
 }
 .comment-options .material-icons {
+    padding: 8px;
     color: #909090;
     font-size: 16px;
     line-height: 16px;
