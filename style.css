@@ -194,6 +194,7 @@ iframe {
     height: 100%;
 }
 .video header {
+    position: relative;
     margin-bottom: 15px;
     padding-top: 20px;
     padding-bottom: 8px;
@@ -224,6 +225,19 @@ iframe {
     display: flex;
     align-items: center;
     margin-left: 16px;
+}
+.sentiment {
+    position: absolute;
+    left: 440px;
+    bottom: 0;
+    width: 149px;
+    height: 2px;
+    background-color: #606060;
+}
+.like-bar {
+    width: 95%;
+    height: 2px;
+    background-color: #909090;
 }
 .video-info {
     position: relative;
