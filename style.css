@@ -148,7 +148,7 @@ input[type="search"] {
   appearance: none; /* rest */
   width: 80%;
   margin: 0;
-  padding: 5px 0;
+  padding: 5px 10px;
   font: 16px/24px "Roboto", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.882353);
   background-color: #111;
